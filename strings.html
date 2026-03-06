@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>String Operations</p>
+    </div>
+    <script>
+        //concatenation
+      let first_name = "steve"
+      let last_name = "Tavish"
+      let full_name = first_name + " " + last_name
+      let full_name2 = first_name.concat(last_name)
+
+      console.log(full_name)
+      console.log(full_name2)
+
+
+    //   template literals
+    let language = "javascript"
+    console.log(`My language of choice is ${language}`)
+
+    // accessing characters
+    console.log(first_name[2])
+
+    // length
+    console.log(full_name.length)
+
+    // slicing-extracts a portion of a string
+    let sentence = "my dog barks a lot"
+    console.log(sentence.slice(0,13))
+
+    // uppercase()
+    // lowercase() 
+    let sentence2 = sentence.toUpperCase()
+    let sentence3 = sentence.toLowerCase()
+   console.log(sentence2)
+   console.log(sentence3)
+
+  //  trim- removes white space from the whole string
+  let value = "  Random string"
+  console.log(value.trim())
+  console.log(value.trimLeft())
+  console.log(value.trimEnd())
+
+  // split- splits a string into multiple strings and places them in an array
+  let name = "mary"
+  console.log(name.split())
+  console.log(name.split(''))
+
+  let x = "Jack wakes up,he get ready,he goes to work"
+  console.log(x.split(','))
+
+
+  // include-checks for inclusion of a string
+  let sentence4 ="Hello James and welcome home"
+  console.log(sentence.includes("home"))
+
+  // replace
+  let text = "Enter the code"
+  let newtext = text.replace("Enter", "Input")
+  console.log(text)
+  console.log(newtext)
+
+  // startswith
+  let sentence5 ="Welcome to our home"
+  console.log(sentence5.startsWith("Welcome"))
+
+  // endswith
+  let sentence6 ="welcome to our home"
+  console.log(sentence6.endsWith("welcome"))
+
+  // indexof
+  let text2 = "Hello to the universe"
+  console.log(text2.indexOf("Hello"))
+
+
+
+  // task1
+
+  // 1.Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class f_name = “  JOHn  .“ to “john”
+   f_name = "  JOHn  ."
+   f_name = f_name.trim().toLowerCase().replace(".", "")
+   console.log(f_name)
+
+  //  Slice the below string to get you the resulting sentence:sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+  sentence_one = "The Dog Breed is German Shepherd"
+  sentence_one = sentence_one.slice(8,23)
+  console.log(sentence_one)
+
+  // sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces
+  sentence_two ="Defeats for the Clinton forces, this was her moment of triumph"
+  sentence_two = sentence_two.slice(16,30)
+  console.log(sentence_two)
+
+  // Split the below sentence using a semicolon i.e ; And display length of the result. “The lazy dog; ran so fast; it hit the wall.” 
+  sentence_three ="The lazy dog; ran so fast; it hit the wall."
+  console.log(sentence_three.split(';').length)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    </script>
+  </body>
+</html>
