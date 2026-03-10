@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>conditional statements</p>
+    </div>
+    <script>
+      // Even or Odd Checker
+      let num = Number(prompt("Enter a number"));
+      if (num % 2 === 0) {
+        console.log(num + " is even");
+      } else {
+        console.log(num + " is odd");
+      }
+
+      // Check if 3 values are equal
+      let x = Number(prompt("Enter a value"));
+      let y = Number(prompt("Enter a value"));
+      let z = Number(prompt("Enter a value"));
+      if (x === y && y === z) {
+        console.log("All three values are equal");
+      } else {
+        console.log("The three values are NOT equal");
+      }
+
+      // Create 3 variables and console log the largest of them. Assume that the user would not enter any two numbers which are the same.
+      let a = Number(prompt("enter number"));
+      let b = Number(prompt("enter number"));
+      let c = Number(prompt("enter number"));
+
+      if (a >= b && a >= c) {
+        console.log("The largest number is: " + a);
+      } else if (b >= a && b >= c) {
+        console.log("The largest number is: " + b);
+      } else {
+        console.log("The largest number is: " + c);
+      }
+
+      // Create a variable called year and enter the a random year. Check if the year is a leap year or not. A leap year is a year that is divisible by 4 not divisible by 100 or divisible by 400.
+      let year = Number(prompt("enter year"));
+
+      // Leap year: divisible by 4 AND (not divisible by 100 OR divisible by 400)
+      if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+        console.log(year + " is a leap year!");
+      } else {
+        console.log(year + " is NOT a leap year.");
+      }
+
+      // Take as input from a user the temperature if the temperature is above 30°C display “The temperature is too high”,if the temperature   is above 15 display “Normal temperature” otherwise display “Cold temperature”
+      let temperature = Number(prompt("enter temp"));
+      if (temperature > 30) {
+        console.log("The temperature is too high");
+      } else if (temperature > 15 < 30) {
+        console.log("Normal temperature");
+      } else {
+        ("cold temperature");
+      }
+
+      // Write a js program that checks if a variable x is between 10 and 20 (inclusive) and if another variable y is greater than 100. If both conditions are true, display"Conditions met", otherwise display"Conditions not met"
+      let x1 = Number(prompt("enter value x"));
+      let y1 = Number(prompt("enter value y"));
+
+      if (x1 >= 10 && x1 <= 20 && y1 > 100) {
+        console.log("conditions met");
+      } else {
+        console.log("conditions not met");
+      }
+
+      // Write a js program that checks if a variable password is equal to the string "secret123". If it is, display "Access   granted", otherwise display"Access denied"
+      let password = prompt("enter password");
+      if ((password = "secret123")) {
+        console.log("Access granted");
+      } else {
+        console.log("Access denied");
+      }
+
+      // Write a js program that checks if a variable student_score is greater than 90. If true, check if the attendance is greater than 80. If both conditions are true, display"Excellent student", otherwise display "Good score, but attendance needs improvement"
+      let student_score = Number(prompt("enter score"));
+      let attendance = Number(prompt("enter attendance"));
+      if (student_score > 90) {
+        if (attendance > 80) {
+          console.log("Excellent student");
+        } else {
+          console.log("Good score, but attendance needs improvement");
+        }
+      } else {
+        console.log("Good score, but attendance needs improvement");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equality Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 100px;
+            margin: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Equality Checker</h2>
+        <input type="text" id="x" placeholder="x">
+        <br>
+        <input type="text" id="y" placeholder="y">
+        <br>
+        <input type="text" id="z" placeholder="z">
+        <br>
+        <button onclick="checkEquality()">Check</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function checkEquality() {
+            // Get the input values
+            const x = document.getElementById('x').value;
+            const y = document.getElementById('y').value;
+            const z = document.getElementById('z').value;
+            
+            // Check if any input is empty
+            if (x === '' || y === '' || z === '') {
+                document.getElementById('result').textContent = 'Please enter all three values';
+                document.getElementById('result').style.color = 'red';
+                return;
+            }
+            
+            // Check if all three values are equal
+            if (x === y && y === z) {
+                document.getElementById('result').textContent = 'All three values are equal';
+                document.getElementById('result').style.color = 'green';
+            } else {
+                document.getElementById('result').textContent = 'The three values are NOT equal';
+                document.getElementById('result').style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
