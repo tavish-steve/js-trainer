@@ -29,11 +29,11 @@ console.log(values)
 
 values.shift()
 console.log(values)
-// sort
+// sort-
 let sortArray = [5, 2, 8, 1, 9, 3]
 console.log("Before sort:", sortArray)
 console.log("After sort:", sortArray.sort())
-//  join
+//  join-combines array elements into a single string.
 let joinArray = ['apple', 'banana', 'cherry', 'date']
 console.log("Joined with -", joinArray.join('-'))
 console.log("Joined with ,", joinArray.join(', '))
